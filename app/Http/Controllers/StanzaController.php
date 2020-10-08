@@ -28,7 +28,7 @@ class StanzaController extends Controller
   public function store(Request $request){
 
     $data = $request -> all();
-    $config = Stanza::create($data);
+    $stanza = Stanza::create($data);
 
     return redirect() -> route('stanze-index');
   }
